@@ -489,6 +489,34 @@ header{
     }
   }
 }
+@media all and (max-width: 990px) {
+  #sponsor{
+    .content{
+      &.first,&.middle{
+        border-top: none ;
+        border-bottom: none ;
+      }
+    }
+    .logos{
+      border: none;
+    }
+    .who{
+      width:100%;
+      padding: 5px;
+      border-bottom: 1px solid $gray_smoth;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  #sponsor .logos > div{
+    width: 50%;
+  }
+}
+@media all and (max-width: 450px) {
+  #sponsor .logos > div{
+    width: 100%;
+  }
+}
 /*!
 // 12. Galleries
 // --------------------------------------------------*/
