@@ -56,6 +56,9 @@ ul{
     vertical-align: middle;
     float: none;
 }
+.text-white{
+  color: white;
+}
 /* global style*/
 
 #top-nav{
@@ -485,4 +488,184 @@ header{
       }
     }
   }
+}
+/*!
+// 12. Galleries
+// --------------------------------------------------*/
+//!
+// 12. Galleries
+// --------------------------------------------------*/
+
+.instagram, .lightbox-gallery {
+  position: relative;
+  padding: 282px 0px;
+}
+
+.gallery-header .logo {
+  max-width: 400px;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-header {
+    .logo {
+      max-width: 200px;
+    }
+    h1 {
+      font-size: 24px !important;
+      line-height: 32px !important;
+    }
+  }
+}
+
+.instagram, .lightbox-gallery {
+  overflow: hidden;
+  background: #000 !important;
+}
+
+.instagram ul, .lightbox-gallery ul {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+}
+
+.instagram li, .lightbox-gallery li {
+  float: left;
+  width: 20%;
+  height: 34%;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  overflow: hidden;
+  background-size: cover !important;
+  opacity: 0.5;
+}
+
+.instagram li:hover, .lightbox-gallery li:hover {
+  opacity: 1 !important;
+}
+
+.instagram .container, .lightbox-gallery .container {
+  position: relative;
+  z-index: 3;
+}
+
+.instagram i, .lightbox-gallery i {
+  font-size: 48px;
+  display: inline-block;
+}
+
+.instagram h1, .lightbox-gallery h1 {
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: 300;
+  margin: 0px;
+}
+
+.lightbox-gallery a:hover {
+  color: white;
+}
+
+@media all and (max-width: 1200px) {
+  .instagram li:nth-child(n+9), .lightbox-gallery li:nth-child(n+9) {
+    display: none;
+  }
+  .instagram li, .lightbox-gallery li {
+    width: 25%;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .instagram li:nth-child(n+7), .lightbox-gallery li:nth-child(n+7) {
+    display: none;
+  }
+  .instagram li, .lightbox-gallery li {
+    width: 33.333333%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .instagram, .lightbox-gallery {
+    padding: 144px 0px;
+  }
+  .instagram li:nth-child(n+5), .lightbox-gallery li:nth-child(n+5) {
+    display: none;
+  }
+  .instagram li, .lightbox-gallery li {
+    width: 50%;
+  }
+}
+
+.testimonials {
+  background: #f5f5f5;
+}
+
+.contained-gallery {
+  .instagram, .lightbox-gallery {
+    padding: 185px 0px;
+  }
+  .instagram li:nth-child(n+9), .lightbox-gallery li:nth-child(n+9) {
+    display: none;
+  }
+  .instagram li, .lightbox-gallery li {
+    width: 25%;
+    opacity: 0.7;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .contained-gallery {
+    .instagram li:nth-child(n+7), .lightbox-gallery li:nth-child(n+7) {
+      display: none;
+    }
+    .instagram li, .lightbox-gallery li {
+      width: 33.33333%;
+    }
+    .instagram, .lightbox-gallery {
+      padding: 200px 0px;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .contained-gallery {
+    .instagram, .lightbox-gallery {
+      margin-bottom: 32px;
+    }
+    .btn {
+      margin-bottom: 0px;
+    }
+    .instagram li:nth-child(n+5), .lightbox-gallery li:nth-child(n+5) {
+      display: block !important;
+    }
+    .instagram li:nth-child(n+7), .lightbox-gallery li:nth-child(n+7) {
+      display: none !important;
+    }
+    .instagram li, .lightbox-gallery li {
+      width: 33.33333% !important;
+    }
+  }
+}
+//!
+// Backgrounds & Parallax
+// --------------------------------------------------*/
+
+.background-image-holder {
+  position: absolute;
+  width: 100%;
+  height: 130%;
+  top: -10%;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+}
+
+.image-holder {
+  position: relative;
+  overflow: hidden;
 }
