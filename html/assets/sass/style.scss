@@ -573,7 +573,7 @@ header{
 }
 
 @media all and (max-width: 1200px) {
-  .instagram li:nth-child(n+9), .lightbox-gallery li:nth-child(n+9) {
+  .instagram li:nth-child(n+13), .lightbox-gallery li:nth-child(n+13) {
     display: none;
   }
   .instagram li, .lightbox-gallery li {
@@ -582,7 +582,7 @@ header{
 }
 
 @media all and (max-width: 900px) {
-  .instagram li:nth-child(n+7), .lightbox-gallery li:nth-child(n+7) {
+  .instagram li:nth-child(n+11), .lightbox-gallery li:nth-child(n+11) {
     display: none;
   }
   .instagram li, .lightbox-gallery li {
@@ -594,7 +594,7 @@ header{
   .instagram, .lightbox-gallery {
     padding: 144px 0px;
   }
-  .instagram li:nth-child(n+5), .lightbox-gallery li:nth-child(n+5) {
+  .instagram li:nth-child(n+7), .lightbox-gallery li:nth-child(n+7) {
     display: none;
   }
   .instagram li, .lightbox-gallery li {
@@ -641,10 +641,10 @@ header{
     .btn {
       margin-bottom: 0px;
     }
-    .instagram li:nth-child(n+5), .lightbox-gallery li:nth-child(n+5) {
+    .instagram li:nth-child(n+7), .lightbox-gallery li:nth-child(n+7) {
       display: block !important;
     }
-    .instagram li:nth-child(n+7), .lightbox-gallery li:nth-child(n+7) {
+    .instagram li:nth-child(n+9), .lightbox-gallery li:nth-child(n+9) {
       display: none !important;
     }
     .instagram li, .lightbox-gallery li {
