@@ -1,6 +1,7 @@
 $white_color: #fff;
 $blue_dark: #17607d;
 $blue_light: #0096ff;
+$blue_donker: #002A4A;
 $orange_bright: #ff4f00;
 $orange_yellow: #ff9311;
 $gray_smoth: #d2d2d2;
@@ -11,6 +12,9 @@ $roboto: 'Roboto Slab', serif;
 $open_sans: 'Open Sans', sans-serif;
 
 /* global style*/
+html, body{
+    height: 100%;
+}
 *{
     border-radius: 0px !important;
     -webkit-border-radius: 0px !important;
@@ -672,6 +676,11 @@ header{
 
 
 /* Marcendise */
+#merchandise{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
 .ps-container {
   position: absolute;
   width: 100%;
@@ -939,4 +948,49 @@ header{
       }
     }
   }
+}
+
+
+footer{
+    background-color: $blue_donker;
+    padding: 30px 0px;
+    color: #FFF;
+    
+    .fa{
+        color: #FFF !important;
+    }
+    
+    >div{
+        .logo{
+            text-align: left;
+            img{
+                max-width: 90%;
+                height: auto;
+            }
+        }
+        .back-top{
+            text-align: center;
+        }
+        .social{
+            text-align: right;
+            font-size: 14px;
+        }
+    }
+    
+    .copy{
+        border-top: dashed 1px #FFF;
+        padding-top: 15px;
+        color: #FFF;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 12px;
+        
+        .fa{
+            color: tomato !important;
+        }
+        
+        a{
+            color: #FFF;
+        }
+    }
 }
