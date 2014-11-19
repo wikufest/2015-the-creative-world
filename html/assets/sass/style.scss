@@ -425,6 +425,10 @@ header{
         &.first{
           margin-top: 20px;
         }
+        &.middle{
+          border-top: 1px solid $gray_smoth;
+          border-bottom: 1px solid $gray_smoth;
+        }
         &:before{
             content: '';
             display: inline-block;
@@ -445,11 +449,13 @@ header{
     }
 
     .logos{
+      border-left: 1px solid $gray_smoth;
         >div{
             width: 20%;
             float: left;
             padding: 20px;
             margin: auto;
+
 
             img{
                 width: 100%; height: auto;
