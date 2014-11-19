@@ -1,0 +1,350 @@
+/* global style*/
+* {
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+}
+
+.btn-place {
+  text-align: center;
+  padding: 30px;
+}
+.btn-place .btn-tr {
+  background: transparent;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 300;
+}
+.btn-place .btn-orange {
+  border: solid 1px #ff4f00;
+  color: #ff4f00;
+  transition: all 0.3s ease-out;
+}
+.btn-place .btn-orange:hover {
+  border: solid 1px #ff9311;
+  color: #ff9311;
+}
+.btn-place .btn-blue-light {
+  border: solid 1px #0096ff;
+  color: #0096ff;
+  transition: all 0.3s ease-out;
+}
+.btn-place .btn-blue-light:hover {
+  border: solid 1px #17607d;
+  color: #17607d;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* global style*/
+#top-nav {
+  background-color: #17607d;
+  color: white;
+  text-align: right;
+  padding: 5px 0px;
+}
+
+.navbar {
+  border-bottom: solid 3px #17607d;
+  margin-bottom: 0px;
+  font-family: "Roboto Slab", serif;
+}
+.navbar .navbar-brand {
+  height: auto;
+  padding: 8px 15px;
+}
+.navbar .nav {
+  padding-top: 15px;
+}
+.navbar .nav a {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #17607d;
+}
+.navbar .nav .active a {
+  color: #ff4f00;
+}
+
+header {
+  color: white;
+  background: url(../img/10495386_10152481683036253_1035897877323459436_o.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+header .overlay {
+  padding: 60px 0px;
+  z-index: 1;
+  background: url(../img/header-overlay.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+header h1, header h4 {
+  text-align: center;
+}
+header h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3.750em;
+}
+header h4 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.875em;
+  font-weight: 300;
+}
+header h4.date-location {
+  font-family: "Open Sans", sans-serif;
+  padding: 1.875em 0;
+}
+header h4.date-location div:first-child {
+  text-align: right;
+}
+header h4.date-location div:last-child {
+  text-align: left;
+}
+header #counter .wing {
+  margin-top: 10px;
+  height: 3px;
+  background: white;
+}
+header #counter .wing:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 6px;
+}
+header #counter .time {
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+header #counter .time span {
+  font-size: 14px;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.wrap {
+  padding: 2.50em 0px;
+}
+.wrap .title {
+  font-family: "Roboto Slab", serif;
+  font-size: 2.250em;
+}
+.wrap .title .fa {
+  color: #ff4f00 !important;
+}
+.wrap .content {
+  padding-left: 3.5em;
+}
+.wrap .content .y-video {
+  padding: 0px 12% 3%;
+}
+.wrap .content .y-video iframe {
+  margin: auto;
+  max-width: 100%;
+}
+
+#about p {
+  color: #747474;
+}
+
+#about-overview {
+  margin-bottom: 30px;
+}
+#about-overview > div {
+  text-align: center;
+}
+#about-overview .qty, #about-overview fa, #about-overview .qty-label {
+  display: block !important;
+}
+#about-overview .qty {
+  font-family: "Roboto Slab", serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+#about-overview .fa {
+  color: #ff9311;
+}
+#about-overview .qty-label {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  font-size: 300;
+  color: #747474;
+}
+
+#about-agenda > div {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #747474;
+}
+#about-agenda > div .fa {
+  color: #17607d;
+}
+
+#schedule {
+  background: url(../img/12477555374_8c62f069bf_k.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#schedule .title {
+  color: white;
+}
+#schedule .overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+#schedule h2 {
+  color: #ff4f00;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+#schedule .marker-pin .top, #schedule .marker-pin .bottom {
+  height: 50%;
+  width: 2px;
+  border-left: 2px solid #ff4f00;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+  left: 2px;
+}
+#schedule .schedule-overview {
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid #ff9311;
+  margin-bottom: 36px;
+}
+#schedule .schedule-overview li {
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+#schedule .schedule-overview li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#schedule .schedule-overview li:hover .schedule-text {
+  max-height: 300px;
+  opacity: 1;
+  padding-top: 5px;
+}
+#schedule .schedule-overview li:hover .top {
+  border-color: #ff9311;
+}
+#schedule .schedule-overview li:hover .bottom {
+  border-color: #ff9311;
+}
+#schedule .schedule-overview li:hover .middle {
+  border-color: #ff9311;
+  background: #ff9311;
+}
+#schedule .schedule-overview li:first-child .top {
+  display: none;
+}
+#schedule .schedule-overview li:last-child .bottom {
+  display: none;
+}
+#schedule .schedule-title span {
+  display: block;
+  font-size: 16px;
+}
+#schedule .schedule-title .title {
+  color: #ff4f00;
+  font-family: "Open Sans", sans-serif;
+}
+#schedule .schedule-title .time {
+  font-family: "Open Sans", sans-serif;
+  color: #ff9311;
+  font-size: 14px;
+}
+#schedule .schedule-text {
+  max-height: 0;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+}
+#schedule .schedule-with-text .btn {
+  margin-top: 24px;
+  margin-right: 12px;
+}
+#schedule .schedule-with-text .schedule-overview li {
+  padding-right: 48px;
+}
+@media all and (max-width: 1024px) {
+  #schedule .schedule-overview li {
+    padding-right: 48px;
+  }
+}
+@media all and (max-width: 767px) {
+  #schedule .schedule-with-text .btn {
+    margin-bottom: 32px;
+  }
+  #schedule .contained-gallery .btn {
+    margin-bottom: 32px;
+  }
+}
+#schedule .marker-pin {
+  position: absolute;
+  right: 32px;
+  top: 0;
+  height: 100%;
+}
+#schedule .marker-pin .top {
+  top: 0;
+}
+#schedule .marker-pin .bottom {
+  bottom: 0;
+}
+#schedule .marker-pin .middle {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background: #ff4f00;
+  border-radius: 50% !important;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  margin-top: -9px;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+}
+#schedule .contained-gallery .btn {
+  margin-top: 24px;
+  margin-right: 12px;
+}
+
+#blog {
+  position: relative;
+}
+#blog .container {
+  z-index: 2;
+}
+#blog .bg {
+  z-index: 1;
+  background: #000;
+  width: 50%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: url(../img/unsplash_key_noteblog.jpg) no-repeat;
+  background-size: auto 100%;
+  background-position: center right;
+  top: 0px;
+  bottom: 0px;
+}
+#blog .post-list {
+  padding-top: 30px;
+  padding-left: 60px;
+}
+#blog .post-list .post {
+  margin-bottom: 30px;
+}
+#blog .post-list .post p {
+  color: #747474;
+}
