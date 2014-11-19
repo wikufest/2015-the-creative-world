@@ -3,6 +3,7 @@ $blue_dark: #17607d;
 $blue_light: #0096ff;
 $orange_bright: #ff4f00;
 $orange_yellow: #ff9311;
+$gray_smoth: #d2d2d2;
 
 $text_gray_on_white: #747474;
 
@@ -407,6 +408,56 @@ header{
             
             p{
                 color: $text_gray_on_white;
+            }
+        }
+    }
+}
+
+#sponsor{
+    .content{
+        height: 100%;
+        margin: 0 auto;
+        
+        &:before{
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 100%;
+            vertical-align: middle;
+            margin-left: -0.25em;
+        }
+    }
+    
+    .who {
+        display: inline-block;
+        vertical-align: middle;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: $open_sans;
+    }
+    
+    .logos{
+        >div{
+            width: 20%;
+            float: left;
+            padding: 20px;
+            margin: auto;
+            
+            img{
+                width: 100%; height: auto;
+                
+                -webkit-filter: grayscale(100%);
+                -moz-filter: grayscale(100%);
+                filter: grayscale(100%);
+                
+                transition: all 0.3s ease-out;
+                
+                &:hover{
+                    -webkit-filter: grayscale(0%);
+                    -moz-filter: grayscale(0%);
+                    filter: grayscale(0%);
+                }
             }
         }
     }
