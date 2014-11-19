@@ -20,6 +20,9 @@ html, body{
     -webkit-border-radius: 0px !important;
     -moz-border-radius: 0px !important;
 }
+.img-circle {
+  border-radius: 50% !important;
+}
 .btn-place{
     text-align: center;
     padding: 30px;
@@ -802,12 +805,12 @@ header{
       padding: 5px 8px;
       text-indent: 4px;
       background-color: $blue_dark;
-      
+
       &:hover{
           text-decoration: none;
       }
   }
-    
+
     .shop-option{
         text-align: right;
         text-transform: capitalize;
@@ -815,7 +818,7 @@ header{
         font-weight: 300;
         font-family: $open_sans;
         color: $blue_dark;
-        
+
         select {
             border: solid 1px $blue_dark;
         }
@@ -982,11 +985,11 @@ footer{
     background-color: $blue_donker;
     padding: 20px 0px;
     color: #FFF;
-    
+
     .fa{
         color: #FFF !important;
     }
-    
+
     >div{
         .logo{
             text-align: left;
@@ -1003,7 +1006,7 @@ footer{
             font-size: 16px;
         }
     }
-    
+
     .copy{
         border-top: dashed 1px #FFF;
         padding-top: 15px;
@@ -1015,11 +1018,11 @@ footer{
         word-spacing: 1px;
         font-family: $roboto;
         font-weight: 200;
-        
+
         .fa{
             color: tomato !important;
         }
-        
+
         a{
             color: #FFF;
         }
@@ -1101,4 +1104,60 @@ footer{
 
 #cd-zoom-out {
   background-position: 50% -32px;
+}
+
+/* speakers */
+#speakers{
+  .title{
+    margin-bottom: 50px;
+  }
+  .carousel-inner{
+    .people{
+      margin-bottom: 10px;
+    }
+    img{
+      margin-bottom: 20px;
+    }
+    a{
+      color: $text_gray_on_white;
+      margin: 0 2px;
+      &:hover{
+        color: #0097e5;
+      }
+    }
+    h2{
+      font-size: 14px;
+      color: black;
+      font-weight: bold;
+      margin: 0 0 3px 0;
+    }
+    .sosmed{
+      margin-bottom: 4px;
+    }
+    .job{
+      font-size: 14px;
+      color: $text_gray_on_white;
+      span{
+        font-size: 12px;
+        font-style: italic;
+      }
+    }
+  }
+  background: #fff1ce;
+  .carousel-indicators {
+    bottom: -35px;
+  }
+
+  .carousel-indicators li{
+    border: none;
+    margin: 0;
+    width: 12px;
+    height: 12px;
+    background: #17607d;
+  }
+
+  .carousel-indicators li.active{
+    border: none;
+    background: #0096ff;
+  }
 }
