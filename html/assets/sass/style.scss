@@ -493,6 +493,34 @@ header{
     }
   }
 }
+@media all and (max-width: 990px) {
+  #sponsor{
+    .content{
+      &.first,&.middle{
+        border-top: none ;
+        border-bottom: none ;
+      }
+    }
+    .logos{
+      border: none;
+    }
+    .who{
+      width:100%;
+      padding: 5px;
+      border-bottom: 1px solid $gray_smoth;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  #sponsor .logos > div{
+    width: 50%;
+  }
+}
+@media all and (max-width: 450px) {
+  #sponsor .logos > div{
+    width: 100%;
+  }
+}
 /*!
 // 12. Galleries
 // --------------------------------------------------*/
@@ -682,7 +710,7 @@ header{
     overflow: hidden;
 }
 .ps-container {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -950,10 +978,9 @@ header{
   }
 }
 
-
 footer{
     background-color: $blue_donker;
-    padding: 30px 0px;
+    padding: 20px 0px;
     color: #FFF;
     
     .fa{
@@ -973,7 +1000,7 @@ footer{
         }
         .social{
             text-align: right;
-            font-size: 14px;
+            font-size: 16px;
         }
     }
     
@@ -983,7 +1010,11 @@ footer{
         color: #FFF;
         margin-top: 30px;
         text-align: center;
-        font-size: 12px;
+        font-size: 11px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        font-family: $roboto;
+        font-weight: 200;
         
         .fa{
             color: tomato !important;
@@ -993,4 +1024,81 @@ footer{
             color: #FFF;
         }
     }
+}
+/* google maps */
+#google-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #e7eaf0;
+}
+
+@media only screen and (min-width: 768px) {
+  #google-container {
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  #google-container {
+    height: 600px;
+  }
+}
+
+#cd-google-map {
+  padding: 0;
+  position: relative;
+  address {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    background-color: rgba(43, 109, 136, 0.8);
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0px;
+    a{
+      color: white;
+    }
+  }
+}
+
+#cd-zoom-in, #cd-zoom-out {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: rgba(43, 109, 136, 0.9);
+  background-repeat: no-repeat;
+  background-size: 32px 64px;
+  background-image: url("../img/cd-icon-controller.svg");
+}
+
+.no-touch {
+  #cd-zoom-in:hover, #cd-zoom-out:hover {
+    background-color: #d36868;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #cd-zoom-in, #cd-zoom-out {
+    margin-left: 50px;
+  }
+}
+
+#cd-zoom-in {
+  background-position: 50% 0;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  #cd-zoom-in {
+    margin-top: 50px;
+  }
+}
+
+#cd-zoom-out {
+  background-position: 50% -32px;
 }
