@@ -114,6 +114,14 @@ ul{
             }
         }
     }
+    
+    .navbar-toggle{
+        background-color: $blue_light;
+        margin-top: 20px;
+        .icon-bar{
+            background-color: #fff;
+        }
+    }
 }
 
 header{
