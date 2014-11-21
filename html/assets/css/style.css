@@ -63,6 +63,28 @@ ul {
   color: white;
 }
 
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #909;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #909;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #909;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #909;
+}
+
 /* global style*/
 #top-nav {
   background-color: #17607d;
@@ -125,6 +147,22 @@ header .overlay {
 }
 header h1, header h4 {
   text-align: center;
+}
+header.page {
+  background-position: 0 -160px;
+}
+header.page .overlay {
+  padding: 35px 0;
+}
+header.page h1, header.page h4 {
+  margin: 0;
+  text-align: left;
+}
+header.page h1 {
+  font-size: 30px;
+}
+header.page h4 {
+  font-size: 18px;
 }
 header h1 {
   font-family: "Roboto Slab", serif;
@@ -1267,4 +1305,77 @@ footer .copy a {
     transform: scale(0.5);
     color: #FFFFFF;
   }
+}
+
+.content h1, .content h2, .content h4 {
+  font-weight: normal;
+}
+.content h1, .content h2 {
+  color: #414141;
+}
+.content h1 {
+  font-size: 24px;
+}
+.content h2 {
+  font-size: 18px;
+}
+.content h4 {
+  margin-bottom: 20px;
+  color: #17607d;
+  font-size: 14px;
+}
+.content .table-class th {
+  color: white;
+  font-size: 30px;
+  background: #0096ff;
+}
+.content .table-class th:first-child {
+  color: #0096ff;
+  background: #cecece;
+}
+.content .table-class .class-item {
+  padding: 0;
+  background: #faebad;
+  margin: 7px 0;
+}
+.content .table-class .class-item h3, .content .table-class .class-item p {
+  padding: 0 15px;
+}
+.content .table-class .class-item h3 {
+  margin-top: 15px;
+  color: #000000;
+  font-size: 14px;
+}
+.content .table-class .class-item p {
+  margin: 0;
+  color: #414141;
+}
+.content .table-class .class-item p.text-right {
+  color: #ff4e00;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.content .table-class .class-item .btn-group .btn {
+  color: white;
+  border: none;
+  font-size: 12px;
+  background: #1e9f00;
+}
+.content .table-class .class-item .btn-group:first-child .btn {
+  background: #0096ff;
+}
+.content .table-class .class-item.class-close {
+  background: #faadad;
+}
+.content .table-class .class-item.class-close .btn-group .btn {
+  background: #c60202;
+}
+.content .table-class .class-item.class-close .btn-group:first-child .btn {
+  background: #0096ff;
+}
+.content .table-class .class-item.class-taken {
+  background: #bdfaad;
+}
+.content .table-class .class-item.class-taken p.text-right {
+  color: #008f0a;
 }

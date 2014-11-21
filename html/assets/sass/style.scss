@@ -71,6 +71,20 @@ ul{
 .text-white{
   color: white;
 }
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #909;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #909;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #909;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #909;
+}
 /* global style*/
 
 #top-nav{
@@ -140,6 +154,23 @@ header{
 
     h1, h4{
         text-align: center;
+    }
+
+    &.page{
+      background-position: 0 -160px;
+      .overlay{
+        padding: 35px 0;
+      }
+      h1,h4{
+        margin: 0;
+        text-align: left;
+      }
+      h1{
+        font-size: 30px;
+      }
+      h4{
+        font-size: 18px;
+      }
     }
 
     h1{
@@ -1405,4 +1436,85 @@ footer{
         color:#FFFFFF;
     }
 
+}
+
+.content{
+  h1,h2,h4{
+    font-weight: normal;
+  }
+  h1,h2{
+    color: #414141;
+  }
+  h1{
+    font-size: 24px;
+  }
+  h2{
+    font-size: 18px;
+  }
+  h4{
+    margin-bottom: 20px;
+    color: #17607d;
+    font-size: 14px;
+  }
+  .table-class{
+    th{
+      color: white;
+      font-size: 30px;
+      background: #0096ff;
+      &:first-child{
+        color: #0096ff;
+        background: #cecece;
+      }
+    }
+    .class-item{
+      padding: 0;
+      background: #faebad;
+      margin: 7px 0;
+      h3,p{
+        padding: 0 15px;
+      }
+      h3{
+        margin-top: 15px;
+        color: #000000;
+        font-size: 14px;
+      }
+      p{
+        margin: 0;
+        color: #414141;
+        &.text-right{
+          color: #ff4e00;
+          margin-top: 15px;
+          margin-bottom: 10px;
+        }
+      }
+      .btn-group{
+        .btn{
+          color: white;
+          border: none;
+          font-size: 12px;
+          background: #1e9f00;
+        }
+        &:first-child .btn{
+          background: #0096ff;
+        }
+      }
+      &.class-close{
+        background: #faadad;
+        .btn-group{
+          .btn{
+            background: #c60202;
+          }
+          &:first-child .btn{
+            background: #0096ff;
+          }
+        }
+      }
+      &.class-taken{
+        background: #bdfaad;
+        p.text-right{
+          color: #008f0a;
+        }
+      }
+    }
+  }
 }
