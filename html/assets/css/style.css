@@ -1046,6 +1046,7 @@ footer .copy a {
   font-style: italic;
 }
 #speakers .carousel-indicators {
+  z-index: 1;
   bottom: -35px;
 }
 #speakers .carousel-indicators li {
