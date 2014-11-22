@@ -1508,12 +1508,65 @@ footer{
             background: #0096ff;
           }
         }
+        p.text-right{
+          color: #c60202;
+        }
       }
       &.class-taken{
         background: #bdfaad;
         p.text-right{
           color: #008f0a;
         }
+      }
+    }
+  }
+}
+
+.sidebar{
+  .profile{
+    img, .profile-detail{
+      float:left;
+    }
+    img{
+      margin-right: 5px;
+    }
+    h5,p{
+      margin: 0;
+    }
+    h5{
+      margin: 5px 0;
+    }
+  }
+  .legend{
+    .legend-wrap{
+      margin-bottom: 10px;
+      p{
+        margin-left: 10px;
+        float: left;
+        i.fa-check-circle{
+          color: #008f0a;
+        }
+        i.fa-bell{
+          color: #ff4e00;
+        }
+        i.fa-bell-slash{
+          color: #c60202;
+        }
+      }
+    }
+    .legend-box{
+      float: left;
+      width: 45px;
+      height: 45px;
+      display: inline-block;
+      &.avilable{
+        background: #faebad;
+      }
+      &.not-avilable{
+        background: #faadad;
+      }
+      &.taken{
+        background: #bdfaad;
       }
     }
   }

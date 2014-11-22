@@ -1373,9 +1373,56 @@ footer .copy a {
 .content .table-class .class-item.class-close .btn-group:first-child .btn {
   background: #0096ff;
 }
+.content .table-class .class-item.class-close p.text-right {
+  color: #c60202;
+}
 .content .table-class .class-item.class-taken {
   background: #bdfaad;
 }
 .content .table-class .class-item.class-taken p.text-right {
   color: #008f0a;
+}
+
+.sidebar .profile img, .sidebar .profile .profile-detail {
+  float: left;
+}
+.sidebar .profile img {
+  margin-right: 5px;
+}
+.sidebar .profile h5, .sidebar .profile p {
+  margin: 0;
+}
+.sidebar .profile h5 {
+  margin: 5px 0;
+}
+.sidebar .legend .legend-wrap {
+  margin-bottom: 10px;
+}
+.sidebar .legend .legend-wrap p {
+  margin-left: 10px;
+  float: left;
+}
+.sidebar .legend .legend-wrap p i.fa-check-circle {
+  color: #008f0a;
+}
+.sidebar .legend .legend-wrap p i.fa-bell {
+  color: #ff4e00;
+}
+.sidebar .legend .legend-wrap p i.fa-bell-slash {
+  color: #c60202;
+}
+.sidebar .legend .legend-box {
+  float: left;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}
+.sidebar .legend .legend-box.avilable {
+  background: #faebad;
+}
+.sidebar .legend .legend-box.not-avilable {
+  background: #faadad;
+}
+.sidebar .legend .legend-box.taken {
+  background: #bdfaad;
 }
