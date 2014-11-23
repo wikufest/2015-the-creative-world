@@ -1540,9 +1540,17 @@ footer{
   .legend{
     .legend-wrap{
       margin-bottom: 10px;
-      p{
-        margin-left: 10px;
+      h4, p{
         float: left;
+        margin-left: 10px;
+      }
+      h4{
+        margin: 2px 0 5px 10px;
+        a{
+          color: black;
+        }
+      }
+      p{
         i.fa-check-circle{
           color: #008f0a;
         }

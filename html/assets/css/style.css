@@ -1398,9 +1398,15 @@ footer .copy a {
 .sidebar .legend .legend-wrap {
   margin-bottom: 10px;
 }
-.sidebar .legend .legend-wrap p {
-  margin-left: 10px;
+.sidebar .legend .legend-wrap h4, .sidebar .legend .legend-wrap p {
   float: left;
+  margin-left: 10px;
+}
+.sidebar .legend .legend-wrap h4 {
+  margin: 2px 0 5px 10px;
+}
+.sidebar .legend .legend-wrap h4 a {
+  color: black;
 }
 .sidebar .legend .legend-wrap p i.fa-check-circle {
   color: #008f0a;
