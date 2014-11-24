@@ -1353,7 +1353,7 @@ footer .copy a {
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
-.content .blog-post .content p {
+.content .blog-post .content h1 a, .content .blog-post .content p {
   color: #414141;
 }
 .content .blog-post .content article p {
