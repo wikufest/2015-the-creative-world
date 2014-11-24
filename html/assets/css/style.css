@@ -1324,6 +1324,47 @@ footer .copy a {
   color: #17607d;
   font-size: 14px;
 }
+.content .blog-post {
+  margin-top: 20px;
+}
+.content .blog-post .date {
+  width: 10%;
+  float: left;
+  display: block;
+  margin-top: 20px;
+  color: #0096ff;
+  background: #f3f3f3;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+}
+.content .blog-post .date span {
+  margin-top: 10px;
+  color: white;
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  background: #0096ff;
+}
+.content .blog-post .content {
+  width: 88%;
+  margin-left: 2%;
+  float: left;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.content .blog-post .content p {
+  color: #414141;
+}
+.content .blog-post .content article p {
+  color: #777;
+}
+.content .blog-post .content a.read-more {
+  margin-top: 10px;
+  color: #0096ff;
+  border: 1px solid #0096ff;
+  padding: 10px 15px;
+}
 .content .table-class th {
   color: white;
   font-size: 30px;
