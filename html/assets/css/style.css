@@ -1359,11 +1359,48 @@ footer .copy a {
 .content .blog-post .content article p {
   color: #777;
 }
+.content .blog-post .content article blockquote {
+  border: none;
+  color: white;
+  position: relative;
+  font-size: 18px;
+  padding-left: 30px;
+  background: #0096ff;
+}
+.content .blog-post .content article blockquote:before {
+  content: normal;
+}
+.content .blog-post .content article blockquote .fa-stack {
+  top: 10px;
+  left: -25px;
+  position: absolute;
+}
+.content .blog-post .content article blockquote .fa-quote-right {
+  color: #0096ff;
+}
 .content .blog-post .content a.read-more {
   margin-top: 10px;
   color: #0096ff;
   border: 1px solid #0096ff;
   padding: 10px 15px;
+}
+.content .blog-post .author-title {
+  color: #414141;
+}
+.content .blog-post .author-box {
+  padding: 30px;
+  margin-bottom: 30px;
+  background: #f2f0f0;
+}
+.content .blog-post .author-box img {
+  margin-right: 20px;
+}
+.content .blog-post .author-box h4 {
+  color: #414141;
+  font-size: 18px;
+}
+.content .blog-post .author-box p {
+  color: #777777;
 }
 .content .table-class th {
   color: white;

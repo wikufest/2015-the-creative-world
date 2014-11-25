@@ -1486,14 +1486,53 @@ footer{
       h1 a, p {
         color: #414141;
       }
-      article p {
-        color: #777;
+      article {
+        p {
+          color: #777;
+        }
+        blockquote {
+          border: none;
+          color: white;
+          position: relative;
+          font-size: 18px;
+          padding-left: 30px;
+          background: $blue_light;
+          &:before{
+            content: normal;
+          }
+          .fa-stack{
+            top: 10px;
+            left: -25px;
+            position: absolute;
+          }
+          .fa-quote-right{
+            color: $blue_light;
+          }
+        }
       }
       a.read-more{
         margin-top: 10px;
         color: #0096ff;
         border: 1px solid #0096ff;
         padding: 10px 15px;
+      }
+    }
+    .author-title{
+      color: #414141;
+    }
+    .author-box{
+      padding: 30px;
+      margin-bottom: 30px;
+      background: #f2f0f0;
+      img{
+        margin-right: 20px;
+      }
+      h4{
+        color: #414141;
+        font-size: 18px;
+      }
+      p{
+        color: #777777;
       }
     }
   }

@@ -24,6 +24,14 @@
         <![endif]-->
     </head>
     <body data-spy="scroll" data-target=".navbar">
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=253989441304128&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
         <!-- Preloader -->
         <div id="preloader">
             <div id="status">
@@ -122,9 +130,21 @@
                               <p>Eum consectetuer officiis hymenaeos, dictumst! Mauris commodo sollicitudin adipisci voluptate mattis dolores itaque repudiandae eaque architecto ligula ridiculus, itaque, vitae, pulvinar provident maxime dolorem, varius, exercitation inventore mollis aliquid totam placeat mollitia? Cras? Fames ligula earum vehicula tempora. Sodales debitis tempora veritatis, gravida ipsum sit porttitor reiciendis. Irure, consequatur pulvinar.</p>
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae dignissimos eius facilis eaque voluptatum iste assumenda, rerum culpa veritatis quae explicabo! Quod eligendi, perspiciatis id incidunt ducimus? Quae, temporibus, eius!</p>
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quam voluptatibus perferendis velit ullam iure totam eligendi odit. Facilis hic, iusto officiis consectetur labore perferendis excepturi modi nemo illum voluptas.</p>
+                              <blockquote>
+                                Perumpamaan orang yang ingat pada Tuhannya dengan orang yang tidak mengingat Nya seperti orang hidup dengan yang mati.
+                              </blockquote>
+                              <p>Congue expedita, porro esse quam elementum senectus! Lorem? Lobortis quibusdam perspiciatis. Anim expedita et! Quo officiis exercitation earum minim nisl, tempus nisi lectus pellentesque, ullam lectus excepteur harum! Repudiandae, sunt, penatibus error sollicitudin vitae nostrud sint. Sem pede? Quam fermentum, cupiditate dolore pariatur mollit! Distinctio voluptate mi sollicitudin aliquip auctor.</p>
                             </article>
-                            
+
                           </div>
+                          <div class="clearfix"></div>
+                          <h3 class="author-title">About the Author</h3>
+                          <div class="author-box">
+                            <img src="http://lorempixel.com/148/148/business/" alt="" class="img-circle pull-left">
+                            <h4>Nick Doe</h4>
+                            <p>Aspernatur justo pulvinar iste nec felis eum sapiente incididunt cursus, minima repellendus? Conubia adipisicing, asperiores, sed, eligendi! Explicabo cillum molestias necessitatibus elit? Mauris augue eaque odit, feugiat. Nostra, condimentum cursus! Viverra quod nonummy accusantium iure aenean labore parturient repudiandae eius quibusdam culpa doloremque voluptatem? Erat nascetur dictum pretium, occaecati ultrices.</p>
+                          </div>
+                          <div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-numposts="5" data-colorscheme="light"></div>
                         </div>
                       </div>
                     </div>
@@ -224,6 +244,7 @@
                     }, 1500, 'easeInOutExpo');
                     event.preventDefault();
                 });
+              $('.content blockquote').prepend('<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-quote-right fa-stack-1x"></i></span>')
             });
         </script>
     </body>
